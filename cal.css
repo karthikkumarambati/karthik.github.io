@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzrqITQdd5ZKGbiDWlKBTKjHrPLaXWoL2uMQ&usqp);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero{
+    margin-top: 40px;
+    margin-left: 160px;
+    margin-right: 180px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    box-shadow: 20px 20px 40px rgb(82, 221, 231);
+    background-color: transparent;
+    height: 600px;
+    width: 1060px;
+   
+}
+nav{
+    background-color: darkcyan;
+    width: 1060px;
+    height: 110px;
+    margin-top: -40px;
+}
+nav h1{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 40px;
+}
+nav h2{
+    float: right;
+    font-size: 80px;
+    font-weight: bold;
+    padding-right: 20px;
+    margin-top: -40px;
+}
+.point{
+    padding-top: 20px;
+}
+.point ul{
+    display: inline-flex;
+    list-style: none;
+}
+.point ul li{
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding-left: 35px;
+    color: rgb(243, 186, 240);
+}
+
+.crack {
+   
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.crack ul{
+    display: inline-flex;
+    list-style: none;
+}
+.crack ul li{
+    font-size: 34px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding-left: 130px;
+    color: aliceblue;
+}
+#A,#B,#C,#D,#c{
+    padding-left: 115px;
+}
+
+.drack{
+    margin-left: -40px;
+}
+.drack ul{
+    display: inline-flex;
+    list-style: none;
+}
+.drack ul li{
+    font-size: 34px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding-left: 100px;
+    padding-top: 20px;
+    color: aliceblue;
+}
+
+.erack ul{
+    display: inline-flex;
+    list-style: none;
+}
+.erack ul li{
+    font-size: 34px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding-left: 45px;
+    padding-top: 20px;
+    color: aliceblue;
+}
+#e,#f,#k,#p,#r,#s{
+    padding-left: 90px;
+}
+#i,#j,#n,#o{
+   padding-left: 112px;
+}
+#h,#m{
+    padding-left: 115px;
+}
+#g,#l,#q{
+    padding-left: 105px;
+}
+#c,#e,#aa,#q{
+    cursor: progress;
+    color: crimson;
+}
+.fir{
+    background-color: lightblue;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.fir h1{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+}
+.tooltip_text{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 540px;
+    background-color: whitesmoke;
+    padding: 1.5rem;
+    width: 300px;
+    height: 300px;
+    cursor: progress;
+    top: -10px;
+    border-radius: 10px;
+}
+.tooltip_text::before{
+ position: absolute;
+  content: " ";
+  right: 10% ;
+  top: 300px;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #bfbfbf transparent;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform: rotate(180deg);
+}
+#tooltip:hover .tooltip_text{
+  z-index: 2;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0,-20px);
+  transition: all 0.5s ;
+}
+.pop_over{
+    font-size: -20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.pop_img{
+    position: fixed;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+#path{
+
+    padding-top: 130px;
+    font-size: 8px;
+    font-style: italic;
+}
+.tooltip_pathover{
+    visibility: hidden;
+    position: absolute;
+    left: 95px;
+    background-color: whitesmoke;
+    padding: 1.5rem;
+    width: 300px;
+    height: 320px;
+    cursor: pointer;
+    top: 260px;
+    border-radius: 10px;
+}
+.tooltip_pathover::before{
+ position: absolute;
+  content: " ";
+  right: 10px ;
+  top: -10px;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #bfbfbf transparent;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform: rotate(180deg);
+}
+.tooltip_path:hover .tooltip_pathover{
+  z-index: 2;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0,-20px);
+  transition: all 0.5s ;
+}
+.nag{
+    font-size: 10px;
+    padding-top: 20px;
+}
+.toggle_path{
+    visibility: hidden;
+    position: absolute;
+    cursor: progress;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 300px;
+    height: 380px;
+    left: 90px;
+    top: -10px;
+}
+.toggle_path::before{
+    position: absolute;
+    content: " ";
+    right: 50% ;
+    top: 380px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #bfbfbf transparent;
+    transition-duration: 0.5s;
+    transition-property: transform;
+    transform: rotate(180deg);
+}
+.tooltip_track:hover .toggle_path{
+    z-index: 2;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0,-20px);
+    transition: all 0.5s ;
+  }
+  #track{
+      font-size: 10px;
+  }
+.togglepath_tooltip{
+    visibility: hidden;
+    position: absolute;
+    border-radius: 10px;
+    top: 120px;
+    left: 460px;
+    height: 425px;
+    width: 300px;
+    cursor: progress;
+    padding: 1.5rem;
+    background-color: whitesmoke;
+}
+.togglepath_tooltip::before{
+        position: absolute;
+        content: " ";
+        right: 85%;
+        top: 425px;
+        border-style: solid;
+        border-width: 0 10px 10px 10px;
+        border-color: transparent transparent #bfbfbf transparent;
+        transition-duration: 0.5s;
+        transition-property: transform;
+        transform: rotate(180deg);
+}
+.toggle_tooltip:hover .togglepath_tooltip{
+    visibility: visible;
+    opacity: 1;
+    z-index: 10;
+    transition: 0.5s;
+    transform: translate(0,-20px);
+}
+#goo{
+    font-size: 10px;
+    padding-top: 10px;
+}
+#sep_tember{
+    margin-top: 40px;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    box-shadow: 20px 20px 40px rgb(238, 72, 230);
+    background-color: transparent;
+    height: 600px;
+    width: 1080px;
+    
+    
+   
+}
+ #sep{
+    background-color: rgb(243, 220, 9);
+    width: 1080px;
+    height: 110px;
+}
+ #td{
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 40px;
+}
+ #dt{
+    float: right;
+    font-size: 80px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: -115px;
+}
+.sep_t{
+    padding-top: 20px;
+}
+.sep_t ul{
+    display: inline-flex;
+    list-style: none;
+}
+.sep_t ul li{
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding-left: 35px;
+    color: rgb(168, 233, 217);
+}
+.sept_mber{
+    margin-top: 20px;
+    margin-left: 520px;
+}
+.sept_mber ul{
+    display: inline-flex;
+    position: absolute;
+    list-style: none;
+}
+.sept_mber ul li{
+    font-size: 34px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding-left: 110px;
+    color: aliceblue;
+}
+.septm_ber {
+   
+    margin-top: 85px;
+    margin-left: -40px;
+}
+.septm_ber ul{
+    display: inline-flex;
+    list-style: none;
+}
+.septm_ber ul li{
+    font-size: 34px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding-left: 110px;
+    padding-top: 20px;
+    color: aliceblue;
+}
+#bb{
+    padding-left: 120px;
+}
+#cc{
+    padding-left: 140px;
+}
+#dd{
+    padding-left: 110px;
+}
+.septmb_er ul{
+   display: inline-flex;
+   list-style: none;
+   margin-left: -45px;
+}
+.septmb_er ul li{
+    font-size: 34px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding-left: 105px;
+    padding-top: 20px;
+    color: aliceblue;
+}
+#ff,#gg,#hh{
+    margin-left: -20px;
+}
+#ii,#jj,#kk{
+    margin-left: -10px;
+}
+#ll,#mm,#nn{
+    margin-left: -10px;
+}
+.event_hover{
+    visibility: hidden;
+    position: absolute;
+}
+.event h3{
+    font-size: 80px;
+    margin-left: 60px;
+    margin-top: -30px;
+    color: rgb(16, 17, 17);
+    cursor: pointer;
+}
+.event_hover h4{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+.event_hover::before{
+        position: absolute;
+        transition-duration: 0.5s;
+        transition-property: transform;
+        left: -60px;
+}
+.event:hover .event_hover{
+    visibility: visible;
+    opacity: 1;
+    z-index: 10;
+    transition: 0.5s;
+    transform: translate(0,-20px);
+    background-color: #bfbfbf;
+    width: 1080px;
+    height: 100px;
+}
